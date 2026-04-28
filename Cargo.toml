@@ -1,0 +1,25 @@
+[package]
+name = "rebind-client"
+version = "0.1.0"
+edition = "2021"
+description = "Rust client for the Rebind remote access WebSocket protocol"
+license = "MIT"
+authors = ["US Input Company <inquiries@usinput.com>"]
+homepage = "https://rebind.gg"
+repository = "https://github.com/usinput/rebind-client-rs"
+keywords = ["rebind", "websocket", "hid", "automation", "input"]
+readme = "README.md"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+tokio-tungstenite = "0.26"
+tungstenite = "0.26"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+futures-util = "0.3"
+thiserror = "2"
+
+[dev-dependencies]
+tokio = { version = "1", features = ["full"] }
+tokio-tungstenite = "0.26"
+futures-util = "0.3"
